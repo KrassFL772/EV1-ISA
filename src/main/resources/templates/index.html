@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IAC</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="app-title">📊 Calculadora IAC</span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Calculadora de IAC</h1>
+            <p>Calcula tu Índice de Adiposidad Corporal</p>
+        </section>
+
+        <div class="calculator-card">
+            <div class="logo-container">
+                <img src="Universidad_Tecmilenio.png" alt="Logo Tecmilenio" class="app-logo">
+            </div>
+
+            <h2>Ingresa tus datos</h2>
+            <form id="iacForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecciona</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="altura">Altura (m):</label>
+                        <input type="number" id="altura" name="altura" step="0.01" required placeholder="1.75">
+                    </div>
+                    <div class="form-group">
+                        <label for="cadera">Cadera (cm):</label>
+                        <input type="number" id="cadera" name="cadera" step="0.1" required placeholder="95">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Calcular IAC</button>
+            </form>
+        </div>
+
+        <div id="resultado" class="resultado-card hidden">
+            <h2>Resultado</h2>
+            <p id="resultadoNombre"></p>
+            <div class="resultado-valores">
+                <div class="valor-box">
+                    <span class="valor-label">IAC</span>
+                    <span class="valor-numero" id="valorIAC"></span>
+                </div>
+                <div class="valor-box">
+                    <span class="valor-label">Clasificación</span>
+                    <span class="valor-clasificacion" id="valorClasificacion"></span>
+                </div>
+            </div>
+            <button class="btn btn-secondary" onclick="limpiarFormulario()">Nuevo Cálculo</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Calculadora IAC</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
