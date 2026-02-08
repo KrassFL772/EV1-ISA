@@ -1,14 +1,9 @@
 # Calculadora_ISA
 
-## Overview
-Calculadora_ISA is a web application that provides basic calculator functionalities such as addition, subtraction, multiplication, and division. It is built using Java and the Spring Boot framework.
+## Resúmen
+Calculadora ISA es una aplicación web que proporciona funcionalidades básicas de calculadora como suma, resta, multiplicación y división. Está construido utilizando Java y el framework Spring Boot
 
-## Features
-- Handles HTTP requests for calculator operations.
-- Implements business logic for performing calculations.
-- Provides a simple RESTful API for users to interact with the calculator.
-
-## Project Structure
+## Estructura del proyecto:
 ```
 Calculadora_ISA
 ├── src
@@ -32,33 +27,26 @@ Calculadora_ISA
 └── README.md
 ```
 
-## Setup Instructions
-1. Clone the repository:
+## Instrucciones de configuración
+1. Clonar repositorio:
    ```
    git clone <repository-url>
    ```
-2. Navigate to the project directory:
+2. Navegar al repositorio:
    ```
    cd Calculadora_ISA
    ```
-3. Build the project using Maven:
+3. Construir proyecto con Maven:
    ```
    mvn clean install
    ```
-4. Run the application:
+4. Correr la APP:
    ```
    mvn spring-boot:run
    ```
 
-## Usage
-Once the application is running, you can access the calculator API at:
+## Uso
+Una vez la APP esté corriendo, puedes ingresar a la calculadora en:
 ```
 http://localhost:8080/calculator
 ```
-You can perform operations by sending HTTP requests to the appropriate endpoints for addition, subtraction, multiplication, and division.
-
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
-
-## License
-This project is licensed under the MIT License.
