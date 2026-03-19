@@ -1,0 +1,5 @@
+com\calculadora\service\IACService.class
+com\calculadora\model\Persona.class
+com\calculadora\controller\HomeController.class
+com\calculadora\App.class
+com\calculadora\controller\IACController.class
